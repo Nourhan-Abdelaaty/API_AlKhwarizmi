@@ -11,6 +11,5 @@ namespace API.Models;
     [BsonRepresentation(BsonType.ObjectId)]
     public string? parentId { get; set; }
     public List<TreeItem>? children { get; set; }
-    public int level { get; set; }
 }
 

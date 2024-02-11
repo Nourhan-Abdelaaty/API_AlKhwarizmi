@@ -42,6 +42,11 @@ namespace API.Controllers;
        public async Task<ResponseResult> BuildTree()
        {
            return await _TreeService.BuildTree();
+       } 
+       [HttpGet("GetAll")]
+       public async Task<ResponseResult> GetAll()
+       {
+           return await _TreeService.GetAll();
        }
 }      
        

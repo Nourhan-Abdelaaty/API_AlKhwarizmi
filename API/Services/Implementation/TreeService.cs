@@ -58,11 +58,18 @@ public class TreeService : ITreeService
     {
         try
         {
-            var deleteResult = await _treeCollection.DeleteOneAsync(n => n.id == id);
-            if (deleteResult.DeletedCount == 0)
+            var node = await _treeCollection.Find(n => n.id == id).FirstOrDefaultAsync();
+            if (node == null)
             {
                 return new ResponseResult { isSuccssed = false, message = "لم يتم التعرف" };
             }
+            var nodes = await _treeCollection.Find(n => n.parentId == id).ToListAsync();
+            if (nodes.Count != 0)
+            {
+                foreach (var item in nodes)
+                    await _treeCollection.DeleteOneAsync(n => n.id == item.id);
+            }
+            var deleteResult = await _treeCollection.DeleteOneAsync(n => n.id == id);
             return new ResponseResult { isSuccssed = true, message = "تم الحذف بنجاح", obj = deleteResult };
         }
         catch (Exception ex)
@@ -89,7 +96,7 @@ public class TreeService : ITreeService
     }
     public async Task<ResponseResult> GetAll()
     {
-        var AllData = await _treeCollection.Find(n => n.parentId == null).ToListAsync();
+        var AllData = await _treeCollection.Find(_ => true).ToListAsync();
         return new ResponseResult { isSuccssed = true, message = "تم الاسترجاع بنجاح", obj = AllData };
     }
     public async Task<ResponseResult> BuildTree()

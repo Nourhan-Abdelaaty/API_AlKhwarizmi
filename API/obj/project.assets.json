@@ -1235,11 +1235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AlKhwarizmi\\API\\API\\API.csproj",
+      "projectUniqueName": "D:\\ApiTaskAlkhwarizmi\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\AlKhwarizmi\\API\\API\\API.csproj",
+      "projectPath": "D:\\ApiTaskAlkhwarizmi\\API\\API.csproj",
       "packagesPath": "C:\\Users\\el msria\\.nuget\\packages\\",
-      "outputPath": "D:\\AlKhwarizmi\\API\\API\\obj\\",
+      "outputPath": "D:\\ApiTaskAlkhwarizmi\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\SRC\\Components\\Offline Packages"

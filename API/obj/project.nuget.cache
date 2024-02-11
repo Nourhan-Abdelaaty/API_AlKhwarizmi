@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mi5+tDvIarIaHOj5Esq2y7LvgLqvFvaRrYzVjqB63y4djJU5EZ00RrdgBfOPZCuRF5A0HnoRUshQHAOJ0g98dQ==",
+  "dgSpecHash": "bjP83uwjs/suD7O4WEQXOsV22peBq/mdSSVy8QoajzIvedDMD8BXQPs6yl4XtxM+yX81PSR0DB8DM0eWnQ+qOw==",
   "success": true,
-  "projectFilePath": "D:\\AlKhwarizmi\\API\\API\\API.csproj",
+  "projectFilePath": "D:\\ApiTaskAlkhwarizmi\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\el msria\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\el msria\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
